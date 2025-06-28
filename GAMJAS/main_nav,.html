@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>GAMJAS | 메뉴 호버 드롭다운</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f9faf9;
+    }
+
+    /* header/nav 기본 */
+    header {
+      position: relative;
+      background-color: #fff;
+      border-bottom: 1px solid #eee;
+      z-index: 1000;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 60px;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #2f4f4f;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+      padding: 8px 4px;
+    }
+
+    /* 드롭다운 메뉴 */
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      width: 100vw;
+      background-color: #fff;
+      border-top: 1px solid #eee;
+      padding: 30px 60px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .dropdown-content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .dropdown-content div {
+      font-size: 14px;
+      line-height: 2;
+    }
+
+    .dropdown-content a {
+      color: blue;
+      text-decoration: underline;
+      display: block;
+    }
+
+    nav li:hover .dropdown {
+      display: block;
+    }
+
+    /* 메인 */
+    main {
+      background-color: #eef3e7;
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    main h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: #6b8e23;
+    }
+
+    .search-box {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .search-box input {
+      padding: 10px 14px;
+      width: 280px;
+      border: 1px solid #ccc;
+      border-radius: 4px 0 0 4px;
+      font-size: 14px;
+    }
+
+    .search-box button {
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      border-left: none;
+      border-radius: 0 4px 4px 0;
+      background-color: #f0f0f0;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo">GAMJAS</div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">여행정보</a>
+            <div class="dropdown">
+              <div class="dropdown-content">
+                <div>
+                  지하철 노선도<br>
+                  상세 여행정보
+                </div>
+                <div>
+                  관광<br>
+                  체험<br>
+                  먹거리
+                </div>
+                <div>
+                  <a href="#">소개 & 이용안내</a>
+                  <a href="#">당첨자 발표</a>
+                </div>
+                <div>
+                  <a href="#">자유게시판</a>
+                  <a href="#">생생후기</a>
+                  <a href="#">공지사항</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">미션투어</a></li>
+          <li><a href="#">감자티켓</a></li>
+          <li><a href="#">감자마당</a></li>
+          <li><a href="#">Q&A</a></li>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>
+      Get <span class="highlight">A</span> Memorable<br>
+      Journey <span class="highlight">Around</span> Seoul
+    </h1>
+    <div class="search-box">
+      <input type="text" placeholder="여행지를 검색하세요" />
+      <button>검색</button>
+    </div>
+  </main>
+
+</body>
+</html>
