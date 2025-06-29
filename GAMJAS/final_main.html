@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GAMJAS Index</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding-bottom: 80px;
+    }
+    .nav-container {
+      position: relative;
+      background-color: #fff;
+      border-bottom: 1px solid #dee2e6;
+      z-index: 1001;
+    }
+    .main-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 2rem;
+    }
+    .main-nav .center-nav {
+      display: flex;
+      gap: 2rem;
+    }
+    .main-nav .right-nav {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+    .mega-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      border-top: 1px solid #dee2e6;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      padding: 1.5rem 2rem;
+    }
+    .nav-hover:hover + .mega-menu,
+    .mega-menu:hover {
+      display: block;
+      animation: slideDown 0.25s ease-in-out;
+    }
+    @keyframes slideDown {
+      from {opacity: 0; transform: translateY(-10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #f8f9fa;
+      padding: 1rem;
+      text-align: center;
+      border-top: 1px solid #dee2e6;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 🔹 Header / Navigation -->
+<div class="nav-container">
+  <div class="main-nav">
+    <a style="width: 160px;" class="d-flex align-items-center" href="#"><img src="img/logo.svg" alt="#" style="width: 160px; height: 28px; object-fit: cover;"></a>
+    <div class="center-nav">
+      <div class="nav-hover">여행정보</div>
+      <div class="nav-hover">미션투어</div>
+      <div class="nav-hover">감자티켓</div>
+      <div class="nav-hover">감자마당</div>
+      <div class="nav-hover">Q&A</div>
+    </div>
+    <div class="right-nav">
+      <a href="#" class="text-decoration-none text-dark">로그인</a>
+      <a href="#" class="text-decoration-none text-dark">회원가입</a>
+      <div class="dropdown">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">🌐 한국어</button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">KOR</a></li>
+          <li><a class="dropdown-item" href="#">ENG</a></li>
+          <li><a class="dropdown-item" href="#">JPN</a></li>
+          <li><a class="dropdown-item" href="#">CHN</a></li>
+        </ul>
+        </ul>
+        </ul>
+    </div>
+  </div>
+  <div class="mega-menu">
+    <div class="row text-center">
+      <div class="col-md-2 offset-md-1">
+        <strong>여행정보</strong>
+        <ul class="list-unstyled">
+          <li>지하철 노선도</li>
+          <li>상세 여행정보</li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <strong>미션투어</strong>
+        <ul class="list-unstyled">
+          <li>관광</li>
+          <li>체험</li>
+          <li>먹거리</li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <strong>감자티켓</strong>
+        <ul class="list-unstyled">
+          <li>소개 & 이용안내</li>
+          <li>당첨자 발표</li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <strong>감자마당</strong>
+        <ul class="list-unstyled">
+          <li>자유게시판</li>
+          <li>생생후기</li>
+          <li>공지사항</li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <strong>Q&A</strong>
+        <ul class="list-unstyled">
+          <li>문의 남기기</li>
+          <li>답변 보기</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🔹 Main Carousel -->
+<main class="mt-5 pt-4">
+  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/1920/600" alt="random image">
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1920/600" alt="random image">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</main>
+
+<!-- 🔹 Footer -->
+<footer>
+  <p class="mb-0">&copy; 2025 GAMJAS. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
