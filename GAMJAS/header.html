@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>GAMJAS | 메뉴 호버 드롭다운</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js" integrity="sha512-zKeerWHHuP3ar7kX2WKBSENzb+GJytFSBL6HrR2nPSR1kOX1qjm+oHooQtbDpDBSITgyl7QXZApvDfDWvKjkUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css" integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.bundle.min.js" integrity="sha512-Tc0i+vRogmX4NN7tuLbQfBxa8JkfUSAxSFVzmU31nVdHyiHElPPy2cWfFacmCJKw0VqovrzKhdd2TSTMdAxp2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="border-bottom">
+    <div class="mx-auto d-flex justify-content-between py-4"  style="max-width: 1800px;">
+      
+      <a style="width: 160px;" class="d-flex align-items-center" href="#"><img src="img/logo.svg" alt="#" style="width: 160px; height: 28px; object-fit: cover;"></a>
+      
+      <ul class="p-0 m-0 list-unstyled d-flex gap-5">
+        <li class="d-flex"><a class="py-3 text-decoration-none text-success fw-semibold" href="#">여행정보</a></li>
+        <li class="d-flex"><a class="py-3 text-decoration-none text-secondary fw-semibold" href="#">미션투어</a></li>
+        <li class="d-flex"><a class="py-3 text-decoration-none text-secondary fw-semibold" href="#">감자티켓</a></li>
+        <li class="d-flex"><a class="py-3 text-decoration-none text-secondary fw-semibold" href="#">감자마당</a></li>
+        <li class="d-flex"><a class="py-3 text-decoration-none text-secondary fw-semibold" href="#">Q&A</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-4">
+        <a class="text-decoration-none text-secondary" href="#">로그인</a>
+        <a class="text-decoration-none text-secondary" href="#">회원가입</a>
+        <a href="#"><i class="fa-regular fa-map text-secondary small"></i></a>
+        <div class="dropdown">
+          <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+            <i class="fa-solid fa-globe text-secondary small me-1"></i> Language
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item py-2" href="#">KR</a></li>
+            <li><a class="dropdown-item py-2" href="#">EN</a></li>
+            <li><a class="dropdown-item py-2" href="#">JP</a></li>
+            <li><a class="dropdown-item py-2" href="#">CN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1>
+      Get <span class="highlight">A</span> Memorable<br>
+      Journey <span class="highlight">Around</span> Seoul
+    </h1>
+    <div class="search-box">
+      <input type="text" placeholder="여행지를 검색하세요" />
+      <button>검색</button>
+    </div>
+  </main>
+
+</body>
+</html>

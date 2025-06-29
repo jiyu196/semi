@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GAMJAS 인덱스 페이지</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- 🔹 내비게이션 바 -->
+<nav class="navbar navbar-expand-lg bg-light shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-success" href="#">대한민국 구석구석</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#">홈</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">테마</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">지역</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">여행코스</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">여행정보</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">여행혜택</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- 🔹 메인 슬라이드 -->
+<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container py-5 d-flex flex-wrap align-items-center">
+        <div class="col-md-6">
+          <span class="badge bg-dark mb-3">달빛 아래 걷는 월영교와 함께,</span>
+          <h1 class="fw-bold mb-3">고택에서 쉬어가는<br>안동 1박 2일 코스</h1>
+          <a href="#" class="btn btn-outline-dark">자세히 보기</a>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="andong.jpg" class="img-fluid rounded" alt="안동 여행 이미지">
+        </div>
+      </div>
+    </div>
+    <!-- 추가 슬라이드 넣을 경우 여기에 추가 -->
+  </div>
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+  </div>
+</div>
+
+<!-- 🔹 캠페인 영역 -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <span class="badge bg-secondary mb-2">지역을 살리는 여행, 마음을 잇는 동행</span>
+    <h2 class="fw-bold">산불피해 지역을 응원하는 여행+동행 캠페인</h2>
+    <p class="text-muted">여러분의 여행이 산불피해 지역에 고마운 단비가 됩니다.</p>
+
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="campaign1.png" class="card-img-top" alt="숙박세일">
+          <div class="card-body">
+            <span class="badge bg-info text-dark mb-2">캠페인</span>
+            <p>여름맞이 숙박세일 페스타 특별재난지역편</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="campaign2.png" class="card-img-top" alt="산불조기회복">
+          <div class="card-body">
+            <span class="badge bg-info text-dark mb-2">캠페인</span>
+            <p>산불피해지역 조기회복을 위한 여행+동행 캠페인</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="event1.png" class="card-img-top" alt="코스만들기 이벤트">
+          <div class="card-body">
+            <span class="badge bg-warning text-dark mb-2">이벤트</span>
+            <p>‘여행+동행’ 코스 만들기 이벤트<br>2025.6.12 ~ 6.30</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🔹 1330 문의 배너 -->
+<section class="bg-info text-white text-center py-4">
+  <p class="mb-1 fw-bold">[이벤트] 이색 핫플레이스 여행코스</p>
+  <h3>이젠 검색 말고 1330에 문의하세요!</h3>
+</section>
+
+<!-- 🔹 이벤트 목록 -->
+<section class="py-5 bg-body-tertiary">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">EVENT</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="event1.png" class="card-img-top" alt="이벤트1">
+          <div class="card-body">
+            <p class="card-text">‘여행+동행’ 코스 만들기 이벤트</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="event2.png" class="card-img-top" alt="이벤트2">
+          <div class="card-body">
+            <p class="card-text">왜관 올림 페스티벌 응원 댓글 이벤트</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="event3.png" class="card-img-top" alt="이벤트3">
+          <div class="card-body">
+            <p class="card-text">이젠 검색말고 1330에 문의하세요!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
