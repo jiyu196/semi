@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GAMJAS - 소개 & 이용안내</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #f4f7f4;
+    }
+    .tab-btn {
+      border-radius: 12px 12px 0 0;
+      font-weight: 600;
+    }
+    .winner-card {
+      background-color: #ffffff;
+      border: 1px solid #afcb96;
+      border-radius: 20px;
+    }
+    footer {
+      background-color: #3d4c40;
+      color: #ccc;
+      font-size: 0.75rem;
+      padding: 40px 0 20px;
+      margin-top: 80px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 헤더/네비게이션 -->
+<nav class="navbar navbar-expand-lg bg-white border-bottom py-3 px-4">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <a class="navbar-brand" href="#">
+      <img src="img/logo.svg" alt="logo" style="width: 160px; height: 28px;">
+    </a>
+    <ul class="nav">
+      <li class="nav-item"><a class="nav-link fw-bold" href="#">여행정보</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold" href="#">미션투어</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold" href="#">감자티켓</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold" href="#">감자마당</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold" href="#">Q&A</a></li>
+    </ul>
+    <div>
+      <a href="#" class="me-3 text-dark">로그인</a>
+      <a href="#" class="me-3 text-dark">회원가입</a>
+      <button class="btn btn-sm btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+        <i class="fa-solid fa-globe me-1"></i> 한국어
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- 메인 -->
+<main class="container py-5">
+  <!-- 탭 메뉴 -->
+  <div class="d-flex justify-content-center mb-4">
+    <a href="#" class="btn btn-outline-success tab-btn me-2 active">소개 & 이용안내</a>
+    <a href="#" class="btn btn-outline-success tab-btn">당첨자 발표</a>
+  </div>
+
+  <!-- 소개 박스 -->
+  <div class="winner-card p-4 mx-auto" style="max-width: 700px;">
+    <h4 class="fw-bold text-success text-center mb-4">GAMJAS 플랫폼 이용안내</h4>
+    <p class="text-secondary small mb-4 text-center">지하철 노선도 기반의 외국인 관광 커뮤니티 플랫폼입니다. <br> 감자티켓을 통해 다양한 이벤트에 참여하고, <strong>미션투어</strong>로 포인트를 적립하세요!</p>
+    <img src="https://via.placeholder.com/600x400" class="img-fluid rounded mb-4" alt="이용안내 이미지">
+
+    <div class="row border-top border-bottom fw-bold py-2">
+      <div class="col text-center">항목</div>
+      <div class="col text-center">설명</div>
+    </div>
+    <div class="row py-2 border-bottom">
+      <div class="col text-center">감자티켓</div>
+      <div class="col text-center">이벤트 응모권, 마이페이지에서 확인 가능</div>
+    </div>
+    <div class="row py-2 border-bottom">
+      <div class="col text-center">미션투어</div>
+      <div class="col text-center">체험 완료 시 감자티켓 자동 적립</div>
+    </div>
+    <div class="row py-2">
+      <div class="col text-center">후기작성</div>
+      <div class="col text-center">포인트 적립 및 공유 가능</div>
+    </div>
+  </div>
+
+  <div class="text-end text-secondary small mt-4">
+    등록일 : 2025.00.00&nbsp;&nbsp;&nbsp;수정일 : 2025.00.00
+  </div>
+</main>
+
+<!-- 푸터 -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 mb-3">
+        <h6 class="text-uppercase text-white">GAMJAS</h6>
+        <p class="mb-1">Discover Seoul Through K-Culture — Where Every Stop Tells a Story</p>
+        <p class="mb-1">지하철로 떠나는 K-컬처 여행, 서울의 진짜 매력을 만날 수 있는 외국인 맞춤 관광 커뮤니티</p>
+      </div>
+      <div class="col-md-2 mb-3">
+        <h6 class="text-white">바로가기</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light">여행정보</a></li>
+          <li><a href="#" class="text-light">미션투어</a></li>
+          <li><a href="#" class="text-light">감자마당</a></li>
+          <li><a href="#" class="text-light">Q&A</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 mb-3">
+        <h6 class="text-white">Contact</h6>
+        <p><i class="fa-regular fa-envelope"></i> support@gamjas.com</p>
+        <p><i class="fa-solid fa-phone"></i> 02-1234-5678</p>
+        <p><i class="fa-solid fa-blog"></i> Blog</p>
+        <p><i class="fa-brands fa-instagram"></i> Instagram</p>
+        <p><i class="fa-solid fa-location-dot"></i> 서울특별시 강남구 감자대로 1길</p>
+        <p>이용약관 | 개인정보처리정책</p>
+      </div>
+    </div>
+    <div class="text-center mt-2">
+      <small class="text-light">&copy; 2025 GAMJAS. All rights reserved.</small>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

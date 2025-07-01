@@ -1,0 +1,43 @@
+
+:root {
+  --gamjas: #6a983c; /* 메인 포인트 색 - 감성적이고 세련된 올리브 그린 */
+  --gamjas-hover: #5c8735; /* hover 시 살짝 짙게 */
+  --gamjas-text: #ffffff;
+}
+
+/* ✅ 기본형 버튼 */
+.btn-gamjas {
+  background-color: var(--gamjas);
+  color: var(--gamjas-text) !important;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.btn-gamjas:hover {
+  background-color: var(--gamjas-hover);
+  color: var(--gamjas-text) !important;
+}
+
+/* ✅ 아웃라인형 버튼 */
+.btn-outline-gamjas {
+  background-color: transparent;
+  color: var(--gamjas);
+  border: 1px solid var(--gamjas);
+  transition: all 0.3s ease;
+}
+.btn-outline-gamjas:hover {
+  background-color: var(--gamjas-hover);
+  color: #fff;
+  border-color: var(--gamjas-hover);
+}
+
+/* ✅ 유틸리티 클래스 */
+.bg-gamjas {
+  background-color: var(--gamjas) !important;
+  color: #fff !important;
+}
+.text-gamjas {
+  color: var(--gamjas) !important;
+}
+.border-gamjas {
+  border: 1px solid var(--gamjas) !important;
+}
